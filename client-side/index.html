@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html style="font-size: 16px" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="sync" />
+    <meta name="twitter:title" content="Party — akkui" />
+    <meta name="og:description" content="Veja vídeos e escute música em tempo real com quem você quiser!" />
+    <meta name="twitter:description" content="Veja vídeos e escute música em tempo real com quem você quiser!" />
+    <title>Party — akkui</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/8d0c0559-8f11-42d4-b40b-a9259fb0111b/website_icon.png?v=1674593966213">
+    <link rel="stylesheet" href="frontend/nicepage.css" media="screen" />
+    <link rel="stylesheet" href="index.css" media="screen" />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="frontend/jquery.js"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="frontend/nicepage.js"
+      defer=""
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script src="https://www.youtube.com/iframe_api" defer></script>
+    <script src="index.js" defer></script>
+    <meta name="theme-color" content="#478ac9" />
+    <meta property="og:title" content="Home" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <header class="u-clearfix u-custom-color-2 u-header u-header" id="sec-cb7a">
+      <div
+        class="u-clearfix u-sheet u-valign-bottom-xs u-valign-middle-lg u-valign-middle-xl u-sheet-1"
+      >
+        <a
+          href="https://nicepage.com"
+          class="u-image u-logo u-image-1"
+          data-image-width="584"
+          data-image-height="584"
+        >
+          <img
+            src="https://cdn.glitch.global/9adc3479-21dc-4c3f-aab5-5ba3a5eaefba/website_icon.png?v=1674620914336"
+            class="u-logo-image u-logo-image-1"
+          />
+        </a>
+        <p class="u-text u-text-default u-text-1">party — akkui</p>
+        <a
+          id="leave_room"
+          style="display: none"
+          class="u-border-none u-btn u-btn-round u-button-style u-hover-grey-10 u-radius-6 u-white u-btn-2"
+          >SAIR DA SALA</a
+        >
+        <br>
+        <a
+          id="sync_button"
+          style="display: none"
+          class="u-border-none u-btn u-btn-round u-button-style u-hover-grey-10 u-radius-6 u-white u-btn-2"
+          >RESYNC</a
+        >
+      </div>
+    </header>
+    <div id="insideRoom" style="display: none">
+      <section class="u-clearfix u-custom-color-2 u-section-1" id="sec-d2e4">
+        <div
+          class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-xl u-sheet-1"
+        >
+          <div
+            class="u-clearfix u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-gutter-12 u-layout-wrap u-layout-wrap-1"
+          >
+            <div class="u-layout">
+              <center>
+                <b><p id="message_insideRoom"></p></b>
+              </center>
+              <div class="u-layout-row">
+                <div
+                  class="u-container-style u-layout-cell u-size-17 u-layout-cell-1"
+                >
+                  <div class="u-container-layout u-container-layout-1">
+                    <div
+                      class="u-container-style u-custom-color-3 u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-group u-radius-10 u-shape-round u-group-1"
+                    >
+                      <div class="u-container-layout u-container-layout-2">
+                        <h2 class="u-text u-text-default u-text-1">
+                          Próximos Vídeos
+                        </h2>
+                        <div class="u-expanded-width u-video u-video-1">
+                          <div class="embed-responsive embed-responsive-1">
+                            <iframe
+                              id="_0"
+                              style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                              "
+                              class="embed-responsive-item"
+                              src=""
+                              frameborder="0"
+                              allowfullscreen=""
+                            ></iframe>
+                          </div>
+                        </div>
+                        <div class="u-expanded-width u-video u-video-2">
+                          <div class="embed-responsive embed-responsive-2">
+                            <iframe
+                              id="_1"
+                              style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                              "
+                              class="embed-responsive-item"
+                              src=""
+                              frameborder="0"
+                              allowfullscreen=""
+                            ></iframe>
+                          </div>
+                        </div>
+                        <div class="u-expanded-width u-video u-video-3">
+                          <div class="embed-responsive embed-responsive-3">
+                            <iframe
+                              id="_2"
+                              style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                              "
+                              class="embed-responsive-item"
+                              src=""
+                              frameborder="0"
+                              allowfullscreen=""
+                            ></iframe>
+                          </div>
+                        </div>
+                        <div class="u-expanded-width u-video u-video-4">
+                          <div class="embed-responsive embed-responsive-4">
+                            <iframe
+                              id="_3"
+                              style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                              "
+                              class="embed-responsive-item"
+                              src=""
+                              frameborder="0"
+                              allowfullscreen=""
+                            ></iframe>
+                          </div>
+                        </div>
+                        <div class="u-expanded-width u-video u-video-5">
+                          <div class="embed-responsive embed-responsive-5">
+                            <iframe
+                              id="_4"
+                              style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                              "
+                              class="embed-responsive-item"
+                              src=""
+                              frameborder="0"
+                              allowfullscreen=""
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="u-container-style u-layout-cell u-size-43 u-layout-cell-2"
+                >
+                  <div class="u-container-layout u-container-layout-3">
+                    <div
+                      class="u-container-style u-custom-color-3 u-expanded-width-lg u-expanded-width-md u-expanded-width-xl u-group u-radius-10 u-shape-round u-group-2"
+                    >
+                      <div class="u-container-layout u-container-layout-4">
+                        <h2 class="u-text u-text-default u-text-2">
+                          Reproduzindo agora
+                        </h2>
+                        <div class="u-expanded-width u-video u-video-6">
+                          <div class="embed-responsive embed-responsive-6">
+                            <img
+                              id="emptyPlayer"
+                              src="https://i.imgur.com/KFUIZpa.png"
+                              style="
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                              "
+                            />
+                            <div
+                              id="player"
+                              style="
+                                visibility: hidden;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                              "
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="u-container-style u-custom-color-3 u-expanded-width-lg u-expanded-width-xl u-group u-radius-10 u-shape-round u-group-3"
+                    >
+                      <div class="u-container-layout u-container-layout-5">
+                        <div class="u-expanded-width-xs u-form u-form-1">
+                          <form
+                            class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form"
+                            source="email"
+                            name="form-1"
+                            style="padding: 10px"
+                          >
+                            <div
+                              class="u-form-group u-form-url u-label-none u-form-group-1"
+                            >
+                              <label for="url-0cd8" class="u-label">URL</label>
+                              <input
+                                type="url"
+                                pattern="^((https?|ftp)://)?[^\s/$.?#]*\.[^\s]*$"
+                                placeholder="Link do Youtube"
+                                id="link_musica"
+                                name="url"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white"
+                                required=""
+                              />
+                            </div>
+                            <div
+                              class="u-align-left u-form-group u-form-submit u-label-none"
+                            >
+                              <a
+                                onclick="addMusic()"
+                                href="#"
+                                class="u-border-none u-btn u-btn-submit u-button-style u-white u-btn-1"
+                                >ADD VIDEO</a
+                              >
+                              <input
+                                type="submit"
+                                value="submit"
+                                class="u-form-control-hidden"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                        <a
+                          onclick="removeMusic()"
+                          id="removeMusicButton"
+                          href="#"
+                          class="u-border-none u-btn u-button-style u-hover-grey-10 u-white u-btn-2"
+                          style="visibility:hidden"
+                          >REMOVER VIDEO</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="setRoom">
+      <section class="u-clearfix u-custom-color-2 u-section-2" id="sec-8895">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <h2 class="u-text u-text-default u-text-1">Seja bem-vindo(a)!</h2>
+          <p
+            class="u-align-center-sm u-align-center-xs u-text u-text-default u-text-2"
+          >
+            <center>
+              Veja vídeos e escute música em tempo real com seus amigos/streamers.<br>
+              Você sabia que existe uma sala global onde todo mundo pode colocar qualquer musica? O ID dela é <b>Global</b>.
+            </center>
+          </p>
+          <div
+            class="u-clearfix u-expanded-width u-gutter-24 u-layout-wrap u-layout-wrap-1"
+          >
+            <div class="u-layout">
+              <center><b><p id="mensagem_setRoom" style="color:red"></p></b></center>
+              <div class="u-layout-row">
+                <div
+                  class="u-container-style u-layout-cell u-size-30 u-layout-cell-1"
+                >
+                  <div class="u-container-layout u-container-layout-1">
+                    <div
+                      class="u-absolute-hcenter u-container-style u-custom-color-3 u-expanded u-group u-radius-10 u-shape-round u-group-1"
+                    >
+                      <div
+                        class="u-container-layout u-valign-top u-container-layout-2"
+                      >
+                        <h3 class="u-text u-text-default u-text-3">
+                          ENTRAR EM UMA SALA
+                        </h3>
+                        <div class="u-form u-form-1">
+                          <form
+                            action="https://forms.nicepagesrv.com/v2/form/process"
+                            class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+                            style="padding: 15px"
+                            source="email"
+                          >
+                            <div class="u-form-email u-form-group u-label-none">
+                              <input
+                                type="text"
+                                placeholder='ID da Sala'
+                                id="roomId"
+                                name="text"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle"
+                                required=""
+                              />
+                            </div>
+                            <div
+                              class="u-align-center u-form-group u-form-submit u-label-none"
+                            >
+                              <a
+                                onclick="joinRoom('roomId')"
+                                id="playerStart"
+                                href="#"
+                                class="u-border-none u-btn u-btn-submit u-button-style u-hover-grey-10 u-white u-btn-1"
+                                >ENTRAR</a
+                              >
+                              <input
+                                type="submit"
+                                value="submit"
+                                class="u-form-control-hidden"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="u-container-style u-layout-cell u-size-30 u-layout-cell-2"
+                >
+                  <div class="u-container-layout u-container-layout-3">
+                    <div
+                      class="u-absolute-hcenter u-container-style u-custom-color-3 u-expanded u-group u-radius-10 u-shape-round u-group-2"
+                    >
+                      <div
+                        class="u-container-layout u-valign-top u-container-layout-4"
+                      >
+                        <h3 class="u-text u-text-default u-text-4">
+                          CRIAR UMA SALA
+                        </h3>
+                        <div class="u-form u-form-2">
+                          <form
+                            class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form"
+                            style="padding: 15px"
+                            source="email"
+                          >
+                            <div class="u-form-email u-form-group u-label-none">
+                              <input
+                                type="text"
+                                placeholder="ID da Sala"
+                                id="roomCreateID"
+                                name="text"
+                                class="u-border-1 u-border-grey-30 u-input u-input-rectangle"
+                                required=""
+                              />
+                            </div>
+                            <div
+                              class="u-align-center u-form-group u-form-submit u-label-none"
+                            >
+                              <a
+                                onclick="roomCreate()"
+                                id="roomCreateButton"
+                                href="#"
+                                class="u-border-none u-btn u-btn-submit u-button-style u-hover-grey-10 u-white u-btn-2"
+                                >CRIAR</a
+                              >
+                              <input
+                                type="submit"
+                                value="submit"
+                                class="u-form-control-hidden"
+                              />
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
